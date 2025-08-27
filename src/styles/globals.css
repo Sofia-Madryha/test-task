@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --primary: #0c0117;
+  --primary-text: #ffffff;
+}
+
+@theme {
+  --font-raleway: "Raleway", sans-serif;
+
+  --color-primary: var(--primary);
+
+  --color-white: #ffffff;
+
+  --color-blue-400: #5bdbfd;
+  --color-blue-500: #13b8ff;
+
+  --color-purple-200: #9c9eff;
+
+  --color-pink-500: #ff4a77;
+
+  --color-gray-200: #c5c5c5;
+
+  --background-image-gradient-primary: linear-gradient(
+    90deg,
+    #5bdbfd 0%,
+    #7375ff 40%,
+    #df93ff 80%,
+    #e56f8c 100%
+  );
+
+  --background-image-gradient-text: linear-gradient(
+    90deg,
+    #90e8ff 0%,
+    #9c9eff 40%,
+    #e3a1ff 80%,
+    #e56f8c 100%
+  );
+}
+
+@layer utilities {
+  .layout-container {
+    @apply w-full max-w-[1120px];
+  }
+}
+
+body {
+  background: var(--primary);
+  color: var(--primary-text);
+  font-family: var(--font-raleway);
+  line-height: 1;
+  letter-spacing: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.15;
+  letter-spacing: 0;
+}

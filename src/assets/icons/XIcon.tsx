@@ -1,0 +1,22 @@
+const XIcon = ({ ...props }) => {
+  return (
+    <svg
+      width="35"
+      height="35"
+      viewBox="0 0 35 35"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M8.75 8.75L26.25 26.25M26.25 8.75L8.75 26.25"
+        stroke="white"
+        strokeWidth="2.91667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export default XIcon;
