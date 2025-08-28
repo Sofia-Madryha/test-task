@@ -23,7 +23,7 @@ const LanguageDropdown = ({ languages, onSelect }: LanguageDropdownProps) => {
     <div className="relative w-10 inline-block text-left">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex justify-between items-center gap-[9px] text-white font-semibold focus:outline-none cursor-pointer"
+        className="flex justify-between items-center gap-[9px] text-white font-semibold focus:outline-none cursor-pointer"
       >
         {selected}
         <DropdownArrowIcon
@@ -32,12 +32,12 @@ const LanguageDropdown = ({ languages, onSelect }: LanguageDropdownProps) => {
       </button>
 
       {isOpen && (
-        <ul className="absolute mt-2 border border-gray-300 rounded-md shadow-lg z-10">
+        <ul className="absolute mt-2 flex flex-col border border-gray-300 bg-purple-600 rounded-md shadow-lg z-10">
           {languages.map((lang) => (
             <li
               key={lang}
               onClick={() => handleSelect(lang)}
-              className="px-3 py-1 hover:bg-purple-200 hover:text-white rounded-md cursor-pointer "
+              className="px-3 py-3 hover:bg-purple-200 hover:text-white font-semibold rounded-md cursor-pointer "
             >
               {lang}
             </li>
