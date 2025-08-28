@@ -19,7 +19,9 @@ const Header = () => {
     <header className=" mx-auto mt-[51px] lg:mt-10 layout-container ">
       <div className="flex justify-between items-center relative z-80">
         <div className="flex items-center">
-          <LogoIcon className="w-[178px] h-[18px] lg:w-50 lg:h-5" />
+          <Link href="/">
+            <LogoIcon className="w-[178px] h-[18px] lg:w-50 lg:h-5" />
+          </Link>
         </div>
 
         <div className="flex items-center gap-8 xl:gap-15">

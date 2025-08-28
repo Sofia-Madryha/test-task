@@ -19,7 +19,7 @@ const PlanCard = ({
 
   return (
     <div
-      className={`relative rounded-2xl py-[31px] px-6 h-[466px] flex flex-col shadow-md ${variants[label]}`}
+      className={`relative rounded-[28px] py-[31px] px-6 h-[466px] flex flex-col shadow-md ${variants[label]}`}
     >
       {bestseller ? (
         <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[169px] px-[33px] py-[11px] text-[16px] font-bold text-white uppercase bg-gradient-primary rounded-full shadow-lg">
@@ -51,7 +51,7 @@ const PlanCard = ({
         {tags.map((tag, idx) => (
           <li
             key={idx}
-            className="text-[16px] uppercase relative leading-[20px] pl-7 before:content-[''] before:absolute before:left-0 before:w-5 before:h-5 before:bg-current before:rounded-full"
+            className="text-[16px] uppercase font-semibold relative leading-[20px] pl-7 before:content-[''] before:absolute before:left-0 before:w-5 before:h-5 before:bg-current before:rounded-full"
           >
             {tag}
           </li>

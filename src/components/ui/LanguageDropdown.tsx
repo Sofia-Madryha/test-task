@@ -23,13 +23,11 @@ const LanguageDropdown = ({ languages, onSelect }: LanguageDropdownProps) => {
     <div className="relative w-10 inline-block text-left">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex justify-between items-center gap-[9px] text-white font-semibold focus:outline-none"
+        className="inline-flex justify-between items-center gap-[9px] text-white font-semibold focus:outline-none cursor-pointer"
       >
         {selected}
         <DropdownArrowIcon
-          className={`cursor-pointer transition-transform ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`transition-transform ${isOpen ? "rotate-180" : ""}`}
         />
       </button>
 

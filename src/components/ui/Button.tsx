@@ -23,14 +23,14 @@ const Button = ({
   };
 
   const variants = {
-    primary: "bg-gradient-secondary text-white font-semibold",
+    primary: "bg-gradient-secondary text-white",
     white: "bg-white text-black",
     black: "bg-black text-white",
   };
 
   return (
     <button
-      className={`relative flex items-center justify-center rounded-full transition duration-300 cursor-pointer ${sizes[size]} ${variants[variant]} ${className}`}
+      className={`relative flex items-center justify-center rounded-full font-semibold transition duration-300 cursor-pointer ${sizes[size]} ${variants[variant]} ${className}`}
       {...props}
     >
       {children}
