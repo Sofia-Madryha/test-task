@@ -23,8 +23,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="mt-[51px] lg:mt-10 px-10  flex justify-center">
-      <div className="layout-container flex justify-between items-center z-80">
+    <header className=" mx-auto mt-[51px] lg:mt-10 layout-container ">
+      <div className="flex justify-between items-center z-80">
         <div className="flex items-center">
           <LogoIcon className="w-[178px] h-[18px] lg:w-50 lg:h-5" />
         </div>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -8,6 +9,7 @@
 
 @theme {
   --font-raleway: "Raleway", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
 
   --color-primary: var(--primary);
 
@@ -17,31 +19,51 @@
   --color-blue-500: #13b8ff;
 
   --color-purple-200: #9c9eff;
+  --color-purple-300: #a75df3;
+
+  --color-purple-600: #0c0117;
 
   --color-pink-500: #ff4a77;
 
   --color-gray-200: #c5c5c5;
 
   --background-image-gradient-primary: linear-gradient(
-    90deg,
-    #5bdbfd 0%,
-    #7375ff 40%,
-    #df93ff 80%,
-    #e56f8c 100%
+    150deg,
+    rgba(91, 219, 253, 1) 2%,
+    rgba(115, 117, 255, 1) 65%,
+    rgba(157, 129, 255, 1) 86%,
+    rgba(187, 137, 255, 1) 100%
+  );
+
+  --background-image-gradient-secondary: linear-gradient(
+    95deg,
+    rgba(91, 219, 253, 1) 2%,
+    rgba(115, 117, 255, 1) 36%,
+    rgba(149, 126, 255, 1) 69%,
+    rgba(198, 140, 255, 1) 83%,
+    rgba(223, 147, 255, 1) 100%,
+    rgba(229, 111, 140, 1) 100%
+  );
+
+  --background-image-gradient-purple: linear-gradient(
+    25deg,
+    rgba(23, 65, 95, 1) 5%,
+    rgba(12, 1, 23, 1) 37%,
+    rgba(23, 8, 39, 1) 67%,
+    rgba(66, 33, 100, 1) 96%,
+    rgba(94, 50, 140, 1) 100%
   );
 
   --background-image-gradient-text: linear-gradient(
     90deg,
-    #90e8ff 0%,
-    #9c9eff 40%,
-    #e3a1ff 80%,
-    #e56f8c 100%
+    rgba(144, 232, 255, 1) 20%,
+    rgba(156, 158, 255, 1) 66%
   );
 }
 
 @layer utilities {
   .layout-container {
-    @apply w-full max-w-[1120px];
+    @apply w-full max-w-[393px] sm:max-w-[1280px] px-10 lg:px-20;
   }
 }
 
@@ -65,4 +87,10 @@ h6,
 p {
   line-height: 1.15;
   letter-spacing: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
