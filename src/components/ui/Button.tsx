@@ -18,7 +18,7 @@ const Button = ({
 }: ButtonProps) => {
   const sizes = {
     lg: "h-15 lg:h-[74px] w-full md:w-[534px] text-[14px] lg:text-[22px]",
-    md: "h-[57px] w-full md:w-[287px] text-base",
+    md: "h-[47px] lg:h-[57px] w-full md:w-[287px] text-base",
     sm: "h-[40px] w-full md:w-[190px] text-xs",
   };
 

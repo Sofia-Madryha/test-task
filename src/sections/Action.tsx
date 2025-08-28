@@ -16,21 +16,21 @@ const Action = () => {
         />
       </div>
       <div className="flex flex-col gap-[62px] lg:gap-[44px] max-w-[281px] md:max-w-[534px] items-center z-5">
-        <div className="flex flex-col text-center italic md:not-italic">
+        <div className="flex flex-col text-center">
           <h3 className="text-[20px] lg:text-[36px] font-bold uppercase mb-5">
             Узнай, как создавать контент, который{" "}
             <span className="bg-gradient-text bg-clip-text text-transparent">
               покоряет аудитории
             </span>
           </h3>
-          <p className="text-[20px] lg:text-[24px]">
+          <p className="text-[14px] lg:text-[20px] lg:text-[24px]">
             Материалы, способные стать вирусными и охватить тысячи людей!
           </p>
         </div>
         <Button
           isDiscount
           size="lg"
-          className="max-w-[268px] h-[68px] md:max-w-full italic md:not-italic"
+          className="max-w-[268px] h-[68px] md:max-w-full"
         >
           Купить со скидкой
         </Button>
