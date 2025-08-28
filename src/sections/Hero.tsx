@@ -14,7 +14,7 @@ const Hero = () => {
               alt="Project sample"
               width={644}
               height={466}
-              className="w-full ld:w-[622px] h-[354px] sm:h-[380px] lg:h-[466px] object-cover rounded-[20px]"
+              className="w-full lg:w-[622px] h-[354px] sm:h-[490px] lg:h-[466px] object-cover rounded-[20px]"
             />
           </div>
           <div className="hidden lg:flex flex-col gap-[11px] items-start w-fit">
@@ -36,7 +36,7 @@ const Hero = () => {
           просмотры.
         </p>
 
-        <div className="lg:hidden absolute top-[275px] md:bottom-0  sm:top-100 flex flex-col">
+        <div className="lg:hidden absolute top-[275px] md:bottom-0  sm:top-[410px] flex flex-col">
           <div className="w-full flex flex-col mb-[31px]">
             <p className="text-[21px] text-center font-bold mb-1 bg-gradient-text bg-clip-text text-transparent">
               От 0 до 100,000 за 90 дней
