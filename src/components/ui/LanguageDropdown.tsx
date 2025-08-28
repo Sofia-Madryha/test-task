@@ -1,7 +1,8 @@
 "use client";
 
-import { DropdownArrowIcon } from "@/assets";
 import { useState } from "react";
+
+import { DropdownArrowIcon } from "@/assets";
 
 interface LanguageDropdownProps {
   languages: string[];
@@ -22,7 +23,7 @@ const LanguageDropdown = ({ languages, onSelect }: LanguageDropdownProps) => {
     <div className="relative w-10 inline-block text-left">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex justify-between items-center gap-[9px] text-white focus:outline-none"
+        className="inline-flex justify-between items-center gap-[9px] text-white font-semibold focus:outline-none"
       >
         {selected}
         <DropdownArrowIcon

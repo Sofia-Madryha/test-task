@@ -1,12 +1,10 @@
-"use client";
-
 import Image from "next/image";
 
 import { Button } from "@/components/ui";
 
 const Hero = () => {
   return (
-    <section className="layout-container pt-12 flex">
+    <section className="layout-container mt-12 flex">
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-10 relative">
         <div className="flex-shrink-0 ">
           <div className="rounded-2xl overflow-hidden lg:mb-[42px]">

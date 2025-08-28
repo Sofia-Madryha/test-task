@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 import { LogoIcon, MenuIcon, XIcon } from "@/assets";
-import { Button, LanguageDropdown } from "./ui";
-import Link from "next/link";
+import { Button, LanguageDropdown } from "@/components/ui";
+import { menuItems } from "@/data";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,23 +15,15 @@ const Header = () => {
     console.log("Click");
   };
 
-  const menuItems = [
-    { label: "Структура", value: "structure" },
-    { label: "Обо мне", value: "aboutMe" },
-    { label: "Плюсы", value: "advantages" },
-    { label: "Отзывы", value: "reviews" },
-    { label: "FAQ", value: "faq" },
-  ];
-
   return (
     <header className=" mx-auto mt-[51px] lg:mt-10 layout-container ">
-      <div className="flex justify-between items-center z-80">
+      <div className="flex justify-between items-center relative z-80">
         <div className="flex items-center">
           <LogoIcon className="w-[178px] h-[18px] lg:w-50 lg:h-5" />
         </div>
 
-        <div className="hidden lg:flex items-center gap-8 xl:gap-15">
-          <nav className="flex gap-4 xl:gap-7">
+        <div className="flex items-center gap-8 xl:gap-15">
+          <nav className="hidden lg:flex gap-4 xl:gap-7">
             {menuItems.map((item) => (
               <Link
                 key={item.value}
@@ -45,7 +38,9 @@ const Header = () => {
             languages={["RU", "EN", "UA"]}
             onSelect={(lang) => console.log("Selected language:", lang)}
           />
-          <Button size="sm">Купить со скидкой</Button>
+          <Button className="hidden lg:flex" size="sm">
+            Купить со скидкой
+          </Button>
         </div>
 
         <div

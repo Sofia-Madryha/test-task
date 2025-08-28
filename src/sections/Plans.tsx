@@ -1,47 +1,7 @@
-"use client";
-
 import { PlanCard } from "@/components";
 
-import { PlanCardProps } from "@/types";
+import { plans } from "@/data";
 
-const plans: PlanCardProps[] = [
-  {
-    label: "basic",
-    title: "Базовый",
-    price: "99 $",
-    oldPrice: "139 $",
-    tags: ["Базовый курс", "38 уроков"],
-    bestseller: false,
-  },
-  {
-    label: "pro",
-    title: "Продвинутий",
-    price: "149 $",
-    oldPrice: "199 $",
-    tags: [
-      "База",
-      "Дополнительные уроки",
-      "48 уроков",
-      "чат-комьюнити для создателей контента",
-    ],
-    badge: "Pro",
-    bestseller: true,
-  },
-  {
-    label: "expert",
-    title: "ЭКСПЕРТ",
-    price: "299 $",
-    oldPrice: "500 $",
-    tags: [
-      "Дополнительные уроки",
-      "48 уроков",
-      "Чат-комьюнити для создателей контента",
-      "Разбор вашей страницы в формате видеозвонка",
-    ],
-    badge: "Expert",
-    bestseller: false,
-  },
-];
 
 const Plans = () => (
   <section className="mt-[502px] sm:mt-[400px] lg:mt-[200px] layout-container">

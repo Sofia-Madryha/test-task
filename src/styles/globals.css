@@ -54,10 +54,24 @@
     rgba(94, 50, 140, 1) 100%
   );
 
+  --background-image-gradient-purple-secondary: linear-gradient(
+    325deg,
+    rgba(72, 97, 166, 1) 5%,
+    rgba(12, 0, 20, 1) 41%,
+    rgba(28, 19, 58, 1) 78%,
+    rgba(107, 89, 181, 1) 100%
+  );
+
   --background-image-gradient-text: linear-gradient(
     90deg,
-    rgba(144, 232, 255, 1) 20%,
-    rgba(156, 158, 255, 1) 66%
+    rgba(145, 224, 255, 1) 0%,
+    rgba(165, 158, 255, 1) 67%
+  );
+
+  --background-image-gradient-action: linear-gradient(
+    90deg,
+    rgba(12, 1, 23, 1) 58%,
+    rgba(179, 129, 242, 1) 100%
   );
 }
 
