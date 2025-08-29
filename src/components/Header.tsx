@@ -40,7 +40,7 @@ const Header = () => {
             languages={["RU", "EN", "UA"]}
             onSelect={(lang) => console.log("Selected language:", lang)}
           />
-          <Button className="hidden lg:flex" size="sm">
+          <Button className="hidden lg:flex bg-gradient-secondary" size="sm">
             Купить со скидкой
           </Button>
         </div>

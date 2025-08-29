@@ -6,7 +6,11 @@ import { Button } from "@/components/ui";
 
 const Action = () => {
   return (
-    <section className="w-full relative px-[56px] py-[113px] flex items-center justify-center mt-[76px] lg:mt-50 mb-[48px] lg:mb-[59px] bg-gradient-purple-secondary lg:bg-gradient-action overflow-hidden">
+    <section className="relative w-full px-[56px] py-[113px] flex items-center justify-center mt-[76px] lg:mt-50 mb-[48px] lg:mb-[59px] bg-purple-600 lg:bg-gradient-action  overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-secondary z-5" />
+      <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-secondary z-5" />
+      <div className="absolute rounded-full bg-gradient-primary blur-[80.63px] w-[315px] h-[282px] -top-15 -left-15 transform -translate-x-1/2 -translate-y-1/2" />
+      <div className="lg:hidden absolute rounded-full bg-gradient-primary blur-[80.63px] w-[315px] h-[282px] -bottom-15 -right-15 transform translate-x-1/2 translate-y-1/2" />
       <div className="hidden lg:block absolute left-0 top-0 h-full w-[513px] z-2">
         <Image
           src="/img/action-bg.webp"
@@ -30,7 +34,9 @@ const Action = () => {
         <Button
           isDiscount
           size="lg"
-          className="max-w-[268px] h-[68px] md:max-w-full"
+          className="max-w-[268px] h-[68px] md:max-w-full bg-gradient-primary"
+          discountWidth="w-[63px]"
+          discountHeight="h-[68px]"
         >
           Купить со скидкой
         </Button>

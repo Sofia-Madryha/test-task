@@ -21,28 +21,29 @@
   --color-purple-200: #9c9eff;
   --color-purple-300: #a75df3;
 
+  --color-purple-500: #58448e;
   --color-purple-600: #0c0117;
 
   --color-pink-500: #ff4a77;
 
   --color-gray-200: #c5c5c5;
 
+  --inset-shadow-purple: inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2);
+
   --background-image-gradient-primary: linear-gradient(
-    150deg,
-    rgba(91, 219, 253, 1) 2%,
-    rgba(115, 117, 255, 1) 65%,
-    rgba(157, 129, 255, 1) 86%,
-    rgba(187, 137, 255, 1) 100%
+    126.34deg,
+    #5bdbfd 16.95%,
+    #7375ff 79.54%,
+    #df93ff 140.99%,
+    #e56f8c 172.25%
   );
 
   --background-image-gradient-secondary: linear-gradient(
-    95deg,
-    rgba(91, 219, 253, 1) 2%,
-    rgba(115, 117, 255, 1) 36%,
-    rgba(149, 126, 255, 1) 69%,
-    rgba(198, 140, 255, 1) 83%,
-    rgba(223, 147, 255, 1) 100%,
-    rgba(229, 111, 140, 1) 100%
+    89.75deg,
+    #5bdbfd 0.26%,
+    #7375ff 51.07%,
+    #df93ff 100.96%,
+    #e56f8c 126.34%
   );
 
   --background-image-gradient-purple: linear-gradient(
@@ -63,9 +64,19 @@
   );
 
   --background-image-gradient-text: linear-gradient(
-    90deg,
-    rgba(145, 224, 255, 1) 0%,
-    rgba(165, 158, 255, 1) 67%
+    90.63deg,
+    #90e8ff 0.44%,
+    #9c9eff 69.99%,
+    #e3a1ff 138.27%,
+    #e56f8c 173.01%
+  );
+
+  --background-image-gradient-bestseller: linear-gradient(
+    126.34deg,
+    #5bdbfd 16.95%,
+    #7375ff 79.54%,
+    #df93ff 140.99%,
+    #e56f8c 172.25%
   );
 
   --background-image-gradient-action: linear-gradient(
@@ -78,6 +89,25 @@
 @layer utilities {
   .layout-container {
     @apply w-full max-w-[393px] sm:max-w-[1280px] px-10 lg:px-20;
+  }
+
+  .corner-glow {
+    @apply absolute rounded-full bg-gradient-primary blur-[80.63px];
+    width: 315px;
+    height: 282px;
+    z-index: 0;
+  }
+
+  .corner-glow.top-left {
+    top: -10;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .corner-glow.bottom-right {
+    bottom: 30;
+    right: 0;
+    transform: translate(50%, 50%);
   }
 }
 

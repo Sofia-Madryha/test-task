@@ -13,7 +13,7 @@ export const plans: PlanCardProps[] = [
     label: "basic",
     title: "Базовый",
     price: "99 $",
-    oldPrice: "139 $",
+    oldPrice: "139$",
     tags: ["Базовый курс", "38 уроков"],
     bestseller: false,
   },
@@ -21,7 +21,7 @@ export const plans: PlanCardProps[] = [
     label: "pro",
     title: "Продвинутий",
     price: "149 $",
-    oldPrice: "199 $",
+    oldPrice: "199$",
     tags: [
       "База",
       "Дополнительные уроки",
@@ -35,7 +35,7 @@ export const plans: PlanCardProps[] = [
     label: "expert",
     title: "ЭКСПЕРТ",
     price: "299 $",
-    oldPrice: "500 $",
+    oldPrice: "500$",
     tags: [
       "Дополнительные уроки",
       "48 уроков",

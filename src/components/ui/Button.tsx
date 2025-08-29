@@ -2,10 +2,12 @@ import { ButtonHTMLAttributes, ReactNode } from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  variant?: "primary" | "white" | "black";
+  variant?: "primary" | "white" | "black" | "expert";
   size?: "sm" | "md" | "lg";
   className?: string;
   isDiscount?: boolean;
+  discountWidth?: string;
+  discountHeight?: string;
 }
 
 const Button = ({
@@ -14,6 +16,8 @@ const Button = ({
   size = "md",
   className,
   isDiscount = false,
+  discountWidth = "w-[59px]",
+  discountHeight = "h-[60px]",
   ...props
 }: ButtonProps) => {
   const sizes = {
@@ -23,9 +27,10 @@ const Button = ({
   };
 
   const variants = {
-    primary: "bg-gradient-secondary text-white",
+    primary: "text-white",
     white: "bg-white text-black",
     black: "bg-black text-white",
+    expert: "bg-black text-white lg:bg-white lg:text-black",
   };
 
   return (
@@ -35,7 +40,9 @@ const Button = ({
     >
       {children}
       {isDiscount ? (
-        <span className="absolute right-0 top-1/2 -translate-y-1/2 w-[59px] h-15 lg:w-[74px] lg:h-[74px] lg:w-10 lg:h-10 bg-pink-500 rounded-full flex items-center justify-center text-white text-[20px] font-semibold oldstyle-nums">
+        <span
+          className={`absolute right-0 top-1/2 -translate-y-1/2 ${discountWidth} ${discountHeight} lg:w-[74px] lg:h-[74px] bg-pink-500 rounded-full flex items-center justify-center text-white text-[20px] font-semibold oldstyle-nums`}
+        >
           -50%
         </span>
       ) : null}
